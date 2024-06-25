@@ -4,6 +4,7 @@ author: daniel
 categories: [Blogging]
 tags: [writing]
 render_with_liquid: false
+typora-root-url: ../
 ---
 
 **Written by. Daniel**
@@ -11,8 +12,11 @@ render_with_liquid: false
 ## 실패,,
 
 2024년 3월말쯤에 팀장 역할을 맡아 시작했던 토이 프로젝트를 6월 초~중순쯤에 잠깐 피드백 받는 시간이 있었습니다. 사실 마음 속으로 가볍게 생각했던 부분이라서 진행할 때 “그냥 되는대로 해야지”라는 생각이 깔려 있었던 것인지 어떻게 준비를 해야 성공적인 토이 프로젝트가 진행이 될지에 대한 고민을 해보진 않았습니다.
+지킬(Jekyll) 깃허브 블로그의 이미지 첨부하는 법
+.github.io폴더 아래 assets/images폴더 아래에 이미지파일을 넣었다면
+아래와 같은 태그를 이미지가 들어가는 곳에 적는다. width와 height로 크기를 조절할 수 있다.
 
-![고민없음](/assets/img/고민없음.png)
+<img src="https://private-user-images.githubusercontent.com/173597773/342711451-da435907-bef3-4ac4-bf78-f872fc6a910f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkzMTYwMzEsIm5iZiI6MTcxOTMxNTczMSwicGF0aCI6Ii8xNzM1OTc3NzMvMzQyNzExNDUxLWRhNDM1OTA3LWJlZjMtNGFjNC1iZjc4LWY4NzJmYzZhOTEwZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyNVQxMTQyMTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNTMwNzM3NmVkZjkyM2ZhYTA3NDJhOTVmMjg1YTQ3NTczMzM4ZWZmMjFhMjU2Zjg4ZjZmNmRkNmJkNjAwYTU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.a5Jlmt3IXmKPB6-CSd_7lyFhIdPVXOqAIsZk-kjEquQ" width="50%" height="50%" title="제목" alt="아무거나"/> 
 
 “기획? 그냥 캘린더를 활용해서 체크인 관리를 해봐야지” 라고 생각하며 디테일한 기획을 하지 않고 개발을 바로 진행했고, “일정 관리 및 태스크 관리는 좋은게 좋은거니까 각자 잘 준비하면 될거야” 라고 팀장의 책임을 지려고 하지 않았습니다.
 
@@ -22,15 +26,15 @@ render_with_liquid: false
 
 ## 성공적인 토이 프로젝트를 위해 필요한게 뭘까?
 
-![토이프로젝트규칙](/assets/img/토이프로젝트규칙.png)
+<img src="https://private-user-images.githubusercontent.com/173597773/342711247-416a438c-e703-4f37-babe-4b4f7dbeb4fa.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkzMTYwMzEsIm5iZiI6MTcxOTMxNTczMSwicGF0aCI6Ii8xNzM1OTc3NzMvMzQyNzExMjQ3LTQxNmE0MzhjLWU3MDMtNGYzNy1iYWJlLTRiNGY3ZGJlYjRmYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyNVQxMTQyMTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YjY4Mzg3MjJhN2EyMzg3ZjgzNzVmMzkwODllYWQ5ZGM4ZTU1YzM3NDBmZmVhNTIwM2NhZGM3ZDMwMjUxOWVmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.prLPb4s48NTeUdiEdLJg23vLkQ-sbCyVl2R0azAA0bQ" width="60%" height="60%" title="제목" alt="아무거나"/> 
 
 이번에 느꼈던 것은 가볍게라도 체계를 잘 잡는 것이 중요하다는 것을 느꼈습니다. 개발자이면서 동시에 결국 같이 일을 하는 팀이기 때문에 그 팀의 규칙 및 일하는 방식을 확실히 정하고 시작하는 것이 중요하다고 느꼈습니다.
 
-![이정표](/assets/img/이정표.png)
+<img src="https://private-user-images.githubusercontent.com/173597773/342711340-b568a6c8-0810-404b-bbb3-3c07d1fb9c8b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkzMTYwMzEsIm5iZiI6MTcxOTMxNTczMSwicGF0aCI6Ii8xNzM1OTc3NzMvMzQyNzExMzQwLWI1NjhhNmM4LTA4MTAtNDA0Yi1iYmIzLTNjMDdkMWZiOWM4Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyNVQxMTQyMTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMGFiNzE5MDY2M2MwODhhMjZjN2E5NzQ4MjY3ZDA3Nzc5OGUwOTA2MDVmNGQxMjA2OGZkMDEzZGQxYzBlZjUyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.l8G3LI216yfGw7fKDPNJ4sen-q7dJiOBxfvE2cw6VGw" width="80%" height="80%" title="제목" alt="아무거나"/> 
 
 그리고 ‘기획의 중요성’ **하나의 공통된 목표**를 향해 가야 하기 때문에 그 중심이 될 부분이 필요하다고 생각했습니다. 이게 뭘까 생각해보니 실제 일을 할 때는 기획자, 디자이너, 개발자 모두가 하나의 기획서를 보고 조율하면서 해당 기획의 결과물을 완성하겠다는 목표를 가지고 있기 때문에 조금 더 좋은 결과물을 낼 수 있지 않았을까 싶어서  팀의 목표를 삼을만한 기획서 작성을 하게 되었습니다.
 
-![기획서](/assets/img/기획서.png)
+<img src="https://private-user-images.githubusercontent.com/173597773/342711475-51e07a7e-6806-48d0-85b4-015e19956a5e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkzMTYwMzEsIm5iZiI6MTcxOTMxNTczMSwicGF0aCI6Ii8xNzM1OTc3NzMvMzQyNzExNDc1LTUxZTA3YTdlLTY4MDYtNDhkMC04NWI0LTAxNWUxOTk1NmE1ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyNVQxMTQyMTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMzU1MGRhNTEyZmYzMDgyMGZiNTY4NjI5MDEyMjA4NTQzNmI0ODE0MzIzNzRiMDc3ZjYyMDIxZWY1OGIxMjA4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.v3PnwRLAe5cWnhx0N4n7V5DYyTI81Ya7yw3FPpqZuGE" width="80%" height="80%" title="제목" alt="아무거나"/> 
 
 **실제 기획의 일부분**
 
