@@ -2,7 +2,7 @@
 title: 담당자 배정 로직의 전환
 author: leo
 categories: [Blogging]
-tags: [writing]
+tags: [redis, queue]
 render_with_liquid: false
 typora-root-url: ../
 ---
