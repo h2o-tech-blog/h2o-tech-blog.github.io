@@ -2,7 +2,7 @@
 title: 채팅과 웹소켓 구조
 author: Daniel
 categories: [Blogging]
-tags: [reactNative]
+tags: [webSocket]
 render_with_liquid: false
 typora-root-url: ../
 ---
