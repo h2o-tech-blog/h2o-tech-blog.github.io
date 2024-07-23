@@ -85,7 +85,7 @@ Redis를 사용하여 담당자 배정 로직을 구현한 방법은 다음과 �
 
 ## 구현 예제
 
-아래는 Redis를 사용하여 기존 Common - CacheUtil에서 리스트로 상담사 배정 큐를 처리라는 메서드를 추가 스태프 앱 전용 Redis Util입니다.
+스태프 앱 전용 Redis Util입니다.
 
 ```java
 @Component
